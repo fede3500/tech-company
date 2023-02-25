@@ -829,22 +829,7 @@ footer a:hover {
   }
 }
 
-@media (max-width: 450px) {
-  html {
-    font-size: 55%;
-  }
 
-  .home h1 {
-    font-size: 4rem;
-  }
-
-  .heading {
-    font-size: 3rem;
-  }
-  .header .logo{
-    width: 45%;
-  }
-}
 
 
 @media  (max-width: 600px) {
@@ -862,7 +847,21 @@ footer a:hover {
    }
    .header .logo{
     width: 45%;
+}
+
+  html {
+    font-size: 55%;
   }
+
+  .home h1 {
+    font-size: 4rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+
 }
 
   @media  (max-width: 768px) {
@@ -876,10 +875,9 @@ footer a:hover {
    .background{
     display: none;
    }
-
- 
-
-
+   .header .logo{
+    width: 45%;
+}
   }
 
 /* media queries general  */
