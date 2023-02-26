@@ -43,7 +43,7 @@ section {
 .heading::after {
   content: "";
   position: absolute;
-  border-bottom: 0.2rem solid #ee51b1;
+  border-bottom: 0.2rem solid #540AE8;
   width: 10rem;
   bottom: 1rem;
   left: 50%;
@@ -55,7 +55,11 @@ section {
 
 /* IMPORNTATE COPIAR */
 .home {
-  background: linear-gradient(132deg, #fc415a, #591bc5, #212335);
+  background: #005C97;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #363795, #005C97);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #363795, #005C97); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  
   background-size: 400% 400%;
   animation: Gradient 15s ease infinite;
   height: 100vh;
@@ -68,13 +72,13 @@ section {
   top: 80vh;
   width: 10px;
   height: 10px;
-  border: solid 1px #d7d4e4;
+  border: solid 1px #86C7ED;
   transform-origin: top left;
   transform: scale(0) rotate(0deg) translate(-50%, -50%);
   animation: cube 12s ease-in forwards infinite;
 }
 .cube:nth-child(2n) {
-  border-color: #fff;
+  border-color: #86C7ED;
 }
 .cube:nth-child(2) {
   animation-delay: 2s;
@@ -191,6 +195,8 @@ section {
   width:14%;
   margin-right: auto;
 }
+.logo_device{
+visibility: hidden;}
 
 .header .navbar a {
   font-size: 2rem;
@@ -329,13 +335,13 @@ section {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -40px;
+  bottom: -25px;
   text-align: center;
   width: 100%;
 }
 .team-slider button.owl-dot {
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
   display: inline-block;
   margin: 0 6px;
   text-align: center;
@@ -343,7 +349,7 @@ section {
   background-color: #262626;
 }
 .team-slider .owl-dot.active {
-  background-color: coral;
+  background-color: rgb(0, 130, 200);
 }
 .move-animation {
   position: relative;
@@ -416,7 +422,7 @@ section {
   text-align: justify;
 }
 .icon-area-tag {
-  color: orangered;
+  color: #1836b2;
   margin-right: 5px;
 }
 
@@ -430,7 +436,7 @@ section {
 }
 
 .blog .blog-meta-link:is(:hover, :focus) {
-  color: hsl(342, 100%, 50%);
+  color: #1836b2;
   cursor: pointer;
 }
 .blog {
@@ -501,7 +507,10 @@ section {
   font-size: 1rem;
   text-decoration: none;
   font-size: 15px;
-  background: linear-gradient(to right, #ff512f, #f09819);
+  background: #667db6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   font-weight: 500;
   transition: all 0.2s ease-in-out 0s;
 }
@@ -522,7 +531,7 @@ section {
   font-style: italic;
 }
 .icon-area > li i {
-  color: orangered;
+  color: #1836b2;
   margin-right: 5px;
   font-size: 14px;
 }
@@ -593,7 +602,7 @@ section {
 }
 .content .left-side .details i {
   font-size: 30px;
-  color: #3e2093;
+  color: rgb(24, 54, 178);
   margin-bottom: 10px;
 }
 .content .left-side .details .topic {
@@ -612,7 +621,7 @@ section {
 .content .right-side .topic-text {
   font-size: 23px;
   font-weight: 600;
-  color: #3e2093;
+  color: rgb(24, 54, 178);
 }
 .right-side .input-box {
   height: 50px;
@@ -648,12 +657,12 @@ section {
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #3e2093;
+  background: rgb(24, 54, 178);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover {
-  background: #5029bc;
+  background: rgb(24, 54, 178);
 }
 
 
@@ -726,18 +735,18 @@ footer .content .right input[type="submit"] {
   width: 100%;
   font-size: 18px;
   color: #d9d9d9;
-  background: #eb2f06;
+  background: linear-gradient(to right, rgb(102, 125, 182), rgb(0, 130, 200), rgb(0, 130, 200), rgb(102, 125, 182));
   outline: none;
   border-radius: 5px;
   letter-spacing: 1px;
   cursor: pointer;
   margin-top: 12px;
-  border: 2px solid #eb2f06;
+  border: 2px solid rgb(0, 130, 200);
   transition: all 0.3s ease-in-out;
 }
 .content .right input[type="submit"]:hover {
   background: none;
-  color: #eb2f06;
+  color: rgb(0, 130, 200);
 }
 footer .content .media-icons a {
   font-size: 16px;
@@ -752,7 +761,7 @@ footer .content .media-icons a {
   transition: all 0.3s ease;
 }
 .content .media-icons a:hover {
-  border-color: #eb2f06;
+  border-color: rgb(0, 130, 200);
 }
 footer .bottom {
   width: 100%;
@@ -761,13 +770,13 @@ footer .bottom {
   padding: 0 40px 5px 0;
 }
 footer .bottom a {
-  color: #eb2f06;
+  color: rgb(0, 130, 200);
 }
 footer a {
   transition: all 0.3s ease;
 }
 footer a:hover {
-  color: #eb2f06;
+  color: rgb(0, 130, 200);
 }
 
 /* footer */
@@ -861,6 +870,16 @@ footer a:hover {
     font-size: 3rem;
   }
 
+  .logo{
+    visibility: hidden;
+  }
+
+  .logo_device{
+    width: 80%;
+    margin-bottom: 10%;
+    visibility:visible;
+  }
+
 
 }
 
@@ -877,6 +896,10 @@ footer a:hover {
    }
    .header .logo{
     width: 45%;
+}
+
+.team{
+  padding-bottom: 10%;
 }
   }
 
@@ -921,7 +944,7 @@ footer a:hover {
 }
 @media (max-width: 820px) {
   .container_contact {
-    margin: 40px 0;
+    margin: 0 auto;
     height: 100%;
   }
   .container_contact .content {
